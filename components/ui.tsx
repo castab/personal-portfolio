@@ -66,11 +66,12 @@ type PageIntroProps = {
   summary: string
   accent?: 'signal' | 'copper'
   className?: string
+  maxWidth?: string
 }
 
-export function PageIntro({ eyebrow, title, summary, accent = 'signal', className = '' }: PageIntroProps) {
+export function PageIntro({ eyebrow, title, summary, accent = 'signal', className = '', maxWidth = 'max-w-3xl' }: PageIntroProps) {
   return (
-    <div className={cn('max-w-3xl', className)}>
+    <div className={cn(maxWidth, className)}>
       <p className={cn('text-sm font-semibold uppercase tracking-[0.28em]', accent === 'copper' ? 'text-copper' : 'text-signal')}>{eyebrow}</p>
       <h1 className="mt-5 font-heading text-5xl font-bold tracking-tight text-white">{title}</h1>
       <p className="mt-6 text-lg leading-8 text-slate-300">{summary}</p>

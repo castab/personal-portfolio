@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Abstract illustration of a primary database replicating to smaller nodes">
+  <defs>
+    <radialGradient id="glow" cx="0.35" cy="0.45" r="0.75">
+      <stop offset="0%" stop-color="#77e4c8" stop-opacity="0.10" />
+      <stop offset="55%" stop-color="#77e4c8" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="#77e4c8" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" opacity="0.05" />
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="#08111f" />
+  <rect width="800" height="500" fill="url(#dots)" />
+  <rect width="800" height="500" fill="url(#glow)" />
+
+  <!-- rails -->
+  <g stroke="#e39a5f" stroke-opacity="0.35" stroke-width="2">
+    <line x1="60" y1="432" x2="740" y2="432" />
+    <line x1="60" y1="446" x2="740" y2="446" />
+  </g>
+  <g stroke="#e39a5f" stroke-opacity="0.25" stroke-width="2">
+    <line x1="120" y1="428" x2="120" y2="450" />
+    <line x1="220" y1="428" x2="220" y2="450" />
+    <line x1="320" y1="428" x2="320" y2="450" />
+    <line x1="420" y1="428" x2="420" y2="450" />
+    <line x1="520" y1="428" x2="520" y2="450" />
+    <line x1="620" y1="428" x2="620" y2="450" />
+  </g>
+
+  <!-- connections from primary to nodes -->
+  <g stroke="#77e4c8" stroke-opacity="0.45" stroke-width="2" fill="none">
+    <path d="M322 232 C 420 232, 440 158, 516 158" />
+    <path d="M322 268 C 420 268, 440 342, 516 342" />
+  </g>
+  <g fill="#77e4c8">
+    <circle cx="322" cy="232" r="4" />
+    <circle cx="322" cy="268" r="4" />
+    <circle cx="516" cy="158" r="4" />
+    <circle cx="516" cy="342" r="4" />
+  </g>
+
+  <!-- primary database cylinder -->
+  <g>
+    <path d="M182 170 v160 a70 24 0 0 0 140 0 v-160" fill="#ffffff" fill-opacity="0.04" stroke="#77e4c8" stroke-width="2.5" />
+    <path d="M182 224 a70 24 0 0 0 140 0" fill="none" stroke="#77e4c8" stroke-width="2" stroke-opacity="0.5" />
+    <path d="M182 278 a70 24 0 0 0 140 0" fill="none" stroke="#77e4c8" stroke-width="2" stroke-opacity="0.5" />
+    <ellipse cx="252" cy="170" rx="70" ry="24" fill="#0d1b2f" stroke="#77e4c8" stroke-width="2.5" />
+  </g>
+
+  <!-- version badge -->
+  <g>
+    <rect x="292" y="112" width="64" height="36" rx="18" fill="#08111f" stroke="#e39a5f" stroke-width="2" />
+    <text x="324" y="137" text-anchor="middle" font-family="ui-monospace, 'Cascadia Code', Menlo, monospace" font-size="20" font-weight="700" fill="#e39a5f">18</text>
+  </g>
+
+  <!-- replica node cylinders -->
+  <g>
+    <path d="M556 132 v52 a40 14 0 0 0 80 0 v-52" fill="#ffffff" fill-opacity="0.04" stroke="#77e4c8" stroke-width="2" stroke-opacity="0.75" />
+    <ellipse cx="596" cy="132" rx="40" ry="14" fill="#0d1b2f" stroke="#77e4c8" stroke-width="2" stroke-opacity="0.75" />
+    <path d="M556 316 v52 a40 14 0 0 0 80 0 v-52" fill="#ffffff" fill-opacity="0.04" stroke="#77e4c8" stroke-width="2" stroke-opacity="0.75" />
+    <ellipse cx="596" cy="316" rx="40" ry="14" fill="#0d1b2f" stroke="#77e4c8" stroke-width="2" stroke-opacity="0.75" />
+  </g>
+
+  <!-- ssl padlock -->
+  <g transform="translate(668 224)">
+    <rect x="0" y="16" width="44" height="34" rx="8" fill="#08111f" stroke="#e39a5f" stroke-width="2" />
+    <path d="M10 16 v-4 a12 12 0 0 1 24 0 v4" fill="none" stroke="#e39a5f" stroke-width="2" />
+    <circle cx="22" cy="32" r="4" fill="#e39a5f" />
+  </g>
+</svg>

@@ -32,6 +32,27 @@ export function ProjectShell({ children }: { children: ReactNode }) {
   )
 }
 
+export function ExternalLinkButton({ href, children }: { href: string; children: string }) {
+  return (
+    <a
+      className="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-3 text-center text-sm font-semibold text-white transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-signal focus:ring-offset-2 focus:ring-offset-ink"
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {children}
+    </a>
+  )
+}
+
+export function InlineLink({ href, children }: { href: string; children: string }) {
+  return (
+    <a className="text-signal underline decoration-signal/40 underline-offset-4 transition hover:text-white" href={href} target="_blank" rel="noreferrer">
+      {children}
+    </a>
+  )
+}
+
 export function TextBlock({ title, children }: { title: string; children: ReactNode }) {
   return (
     <Card as="section" className="p-8">

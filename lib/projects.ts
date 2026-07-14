@@ -6,7 +6,31 @@ export type Project = {
   tags: string[]
 }
 
-export const projects: Project[] = [
+export const featuredProjects: Project[] = [
+  {
+    title: 'Self-Hosted PostgreSQL 18 for Railway',
+    slug: 'postgres-railway-templates',
+    summary: 'A production-ready Postgres 18 template published when Railway had no official option, adopted by enough deployments to fully cover my own Railway usage.',
+    image: '/images/postgres-railway.svg',
+    tags: ['PostgreSQL', 'Docker', 'Railway']
+  },
+  {
+    title: 'Factory-Style Cargo Bed Lights',
+    slug: 'cargo-lights-controller',
+    summary: 'An ATtiny85 controller that retrofits factory-look cargo bed lighting onto a truck that never shipped with it, down to the smooth fades and battery-saving timeout.',
+    image: '/images/cargo-lights.svg',
+    tags: ['ATtiny85', 'Embedded', 'Automotive']
+  },
+  {
+    title: 'Workout Tracker PWA',
+    slug: 'workout-tracker',
+    summary: 'An installable, offline-capable web app that replaced the pencil and notepad I kept carrying around the gym, with proper development and production environments.',
+    image: '/images/workout-tracker.svg',
+    tags: ['Next.js', 'Supabase', 'PWA']
+  }
+]
+
+export const earlierProjects: Project[] = [
   {
     title: 'Addressable High-Power RGB LEDs',
     slug: 'rgb-leds',

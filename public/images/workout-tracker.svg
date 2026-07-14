@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Abstract illustration of a phone showing workout sets and a rising progress line, next to a dumbbell">
+  <defs>
+    <radialGradient id="wtGlow" cx="0.42" cy="0.45" r="0.75">
+      <stop offset="0%" stop-color="#77e4c8" stop-opacity="0.09" />
+      <stop offset="60%" stop-color="#77e4c8" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#77e4c8" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="wtDots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" opacity="0.05" />
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="#08111f" />
+  <rect width="800" height="500" fill="url(#wtDots)" />
+  <rect width="800" height="500" fill="url(#wtGlow)" />
+
+  <!-- phone -->
+  <rect x="270" y="66" width="204" height="368" rx="30" fill="#ffffff" fill-opacity="0.04" stroke="#77e4c8" stroke-width="2.5" />
+  <rect x="286" y="96" width="172" height="308" rx="14" fill="#0d1b2f" stroke="#77e4c8" stroke-width="2" stroke-opacity="0.4" />
+  <line x1="342" y1="81" x2="402" y2="81" stroke="#77e4c8" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.6" />
+
+  <!-- set rows on screen -->
+  <g>
+    <rect x="300" y="112" width="144" height="34" rx="9" fill="#ffffff" fill-opacity="0.05" stroke="#77e4c8" stroke-width="1.5" stroke-opacity="0.35" />
+    <line x1="312" y1="129" x2="376" y2="129" stroke="#77e4c8" stroke-width="3" stroke-linecap="round" stroke-opacity="0.7" />
+    <circle cx="424" cy="129" r="6" fill="none" stroke="#77e4c8" stroke-width="2" stroke-opacity="0.7" />
+    <path d="M421 129 l2.5 2.5 l4.5 -5" fill="none" stroke="#77e4c8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+
+    <rect x="300" y="154" width="144" height="34" rx="9" fill="#ffffff" fill-opacity="0.05" stroke="#77e4c8" stroke-width="1.5" stroke-opacity="0.35" />
+    <line x1="312" y1="171" x2="392" y2="171" stroke="#77e4c8" stroke-width="3" stroke-linecap="round" stroke-opacity="0.7" />
+    <circle cx="424" cy="171" r="6" fill="none" stroke="#77e4c8" stroke-width="2" stroke-opacity="0.7" />
+    <path d="M421 171 l2.5 2.5 l4.5 -5" fill="none" stroke="#77e4c8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+
+    <rect x="300" y="196" width="144" height="34" rx="9" fill="#ffffff" fill-opacity="0.05" stroke="#77e4c8" stroke-width="1.5" stroke-opacity="0.35" />
+    <line x1="312" y1="213" x2="368" y2="213" stroke="#77e4c8" stroke-width="3" stroke-linecap="round" stroke-opacity="0.7" />
+    <circle cx="424" cy="213" r="6" fill="none" stroke="#e39a5f" stroke-width="2" stroke-opacity="0.8" />
+  </g>
+
+  <!-- progress chart on screen -->
+  <g>
+    <line x1="304" y1="376" x2="440" y2="376" stroke="#77e4c8" stroke-width="1.5" stroke-opacity="0.3" />
+    <polyline points="308,362 340,352 368,340 398,318 432,296" fill="none" stroke="#e39a5f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <g fill="#e39a5f">
+      <circle cx="308" cy="362" r="3.5" />
+      <circle cx="340" cy="352" r="3.5" />
+      <circle cx="368" cy="340" r="3.5" />
+      <circle cx="398" cy="318" r="3.5" />
+      <circle cx="432" cy="296" r="4.5" />
+    </g>
+  </g>
+
+  <!-- dumbbell -->
+  <g stroke="#77e4c8" stroke-width="2.5" fill="#ffffff" fill-opacity="0.04">
+    <line x1="524" y1="250" x2="716" y2="250" />
+    <rect x="544" y="206" width="18" height="88" rx="6" />
+    <rect x="566" y="220" width="16" height="60" rx="6" />
+    <rect x="678" y="206" width="18" height="88" rx="6" />
+    <rect x="658" y="220" width="16" height="60" rx="6" />
+  </g>
+
+  <!-- offline sync badge -->
+  <g transform="translate(96 110)">
+    <circle cx="28" cy="28" r="28" fill="#08111f" stroke="#e39a5f" stroke-width="2" />
+    <path d="M14 25 a15 15 0 0 1 26 -5" fill="none" stroke="#e39a5f" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M40 14 v7 h-7" fill="none" stroke="#e39a5f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M42 31 a15 15 0 0 1 -26 5" fill="none" stroke="#e39a5f" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M16 42 v-7 h7" fill="none" stroke="#e39a5f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <path d="M152 150 C 200 160, 230 180, 262 210" fill="none" stroke="#e39a5f" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round" />
+</svg>
