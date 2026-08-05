@@ -19,7 +19,7 @@
   },
   "homepage": "https://www.supernettech.com",
   "dependencies": {
-    "next": "^16.2.9",
+    "next": "^16.3.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },
@@ -30,7 +30,7 @@
     "autoprefixer": "^10.4.22",
     "eslint": "^9.39.2",
     "eslint-config-next": "^16.2.9",
-    "postcss": "^8.5.6",
+    "postcss": "^8.5.23",
     "tailwindcss": "^3.4.19",
     "typescript": "^5.9.3"
   }
